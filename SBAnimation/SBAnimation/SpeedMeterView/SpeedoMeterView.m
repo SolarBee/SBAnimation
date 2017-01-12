@@ -1,9 +1,12 @@
 //
-//  testView.m
-//  test
+//  SpeedoMeterView.m
+//  SBAnimation
 //
 //  Created by HSY on 17/1/11.
 //  Copyright © 2017年 SY HUANG. All rights reserved.
+//
+//  This source code is licensed under the MIT-style license found in the
+//  LICENSE file in the root directory of this source tree.
 //
 
 #define oneGrid M_PI/100 //一刻度

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="SBTestCell" rowHeight="90" id="zgh-Ix-LVu" customClass="SBTestCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="90"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="zgh-Ix-LVu" id="PCp-hP-hFS">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="89"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SpeedoMeterView" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sZW-tg-88W">
+                        <rect key="frame" x="12" y="18" width="141" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Gsx-ln-rfb">
+                        <rect key="frame" x="296" y="10" width="69" height="69"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="Gsx-ln-rfb" secondAttribute="height" multiplier="1:1" id="j9c-LB-l2l"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="author:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JM0-qX-MC1">
+                        <rect key="frame" x="12" y="57" width="47" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.40400000000000003" green="0.41199999999999998" blue="0.42699999999999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="猫咪瞎跳" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dyF-Fu-v3Y">
+                        <rect key="frame" x="64" y="57" width="62" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.40400000000000003" green="0.41199999999999998" blue="0.42699999999999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="dyF-Fu-v3Y" firstAttribute="centerY" secondItem="JM0-qX-MC1" secondAttribute="centerY" id="4Vq-vb-08d"/>
+                    <constraint firstItem="sZW-tg-88W" firstAttribute="top" secondItem="Gsx-ln-rfb" secondAttribute="top" constant="8" id="Kgc-Kg-W8i"/>
+                    <constraint firstItem="dyF-Fu-v3Y" firstAttribute="leading" secondItem="JM0-qX-MC1" secondAttribute="trailing" constant="5" id="Pto-v5-VgF"/>
+                    <constraint firstItem="Gsx-ln-rfb" firstAttribute="top" secondItem="PCp-hP-hFS" secondAttribute="top" constant="10" id="SSi-b2-AFa"/>
+                    <constraint firstItem="JM0-qX-MC1" firstAttribute="top" secondItem="sZW-tg-88W" secondAttribute="bottom" constant="18" id="Uz4-HV-frC"/>
+                    <constraint firstAttribute="bottom" secondItem="Gsx-ln-rfb" secondAttribute="bottom" constant="10" id="cVN-yo-R69"/>
+                    <constraint firstItem="JM0-qX-MC1" firstAttribute="leading" secondItem="sZW-tg-88W" secondAttribute="leading" id="diJ-p0-stP"/>
+                    <constraint firstItem="sZW-tg-88W" firstAttribute="leading" secondItem="PCp-hP-hFS" secondAttribute="leading" constant="12" id="mfN-Yu-MNQ"/>
+                    <constraint firstAttribute="trailing" secondItem="Gsx-ln-rfb" secondAttribute="trailing" constant="10" id="pnE-5W-wBu"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="animationNameLabel" destination="sZW-tg-88W" id="bDn-bS-1h3"/>
+                <outlet property="authorNameLabel" destination="dyF-Fu-v3Y" id="HFs-Ow-hNn"/>
+                <outlet property="gifImageView" destination="Gsx-ln-rfb" id="hKM-Pj-dnm"/>
+            </connections>
+            <point key="canvasLocation" x="-123" y="-112"/>
+        </tableViewCell>
+    </objects>
+</document>

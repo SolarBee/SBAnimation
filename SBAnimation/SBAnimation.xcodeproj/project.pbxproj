@@ -15,9 +15,16 @@
 		331BAF5D1E275D3F00B94BD4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 331BAF5B1E275D3F00B94BD4 /* LaunchScreen.storyboard */; };
 		331BAF681E275D7D00B94BD4 /* SpeedoMeterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 331BAF661E275D7D00B94BD4 /* SpeedoMeterView.m */; };
 		331BAF691E275D7D00B94BD4 /* SpeedoMeterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 331BAF671E275D7D00B94BD4 /* SpeedoMeterView.xib */; };
+		331BAF6C1E27624F00B94BD4 /* SBTestCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 331BAF6B1E27624F00B94BD4 /* SBTestCell.m */; };
+		331BAF6E1E2763D200B94BD4 /* SBTestCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 331BAF6D1E2763D200B94BD4 /* SBTestCell.xib */; };
+		331BAF711E2764A700B94BD4 /* SBTestModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 331BAF701E2764A700B94BD4 /* SBTestModel.m */; };
+		331BAF781E27752C00B94BD4 /* SpeedMeterTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 331BAF761E27752C00B94BD4 /* SpeedMeterTestViewController.m */; };
+		331BAF791E27752C00B94BD4 /* SpeedMeterTestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 331BAF771E27752C00B94BD4 /* SpeedMeterTestViewController.xib */; };
+		40E9ED01209799629DB57570 /* libPods-SBAnimation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 489EF40C0BD48826AF8FF468 /* libPods-SBAnimation.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		210585C6DCCB291009077F94 /* Pods-SBAnimation.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SBAnimation.release.xcconfig"; path = "Pods/Target Support Files/Pods-SBAnimation/Pods-SBAnimation.release.xcconfig"; sourceTree = "<group>"; };
 		331BAF4A1E275D3F00B94BD4 /* SBAnimation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SBAnimation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		331BAF4E1E275D3F00B94BD4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		331BAF501E275D3F00B94BD4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -31,6 +38,16 @@
 		331BAF651E275D7D00B94BD4 /* SpeedoMeterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpeedoMeterView.h; sourceTree = "<group>"; };
 		331BAF661E275D7D00B94BD4 /* SpeedoMeterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpeedoMeterView.m; sourceTree = "<group>"; };
 		331BAF671E275D7D00B94BD4 /* SpeedoMeterView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SpeedoMeterView.xib; sourceTree = "<group>"; };
+		331BAF6A1E27624F00B94BD4 /* SBTestCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBTestCell.h; sourceTree = "<group>"; };
+		331BAF6B1E27624F00B94BD4 /* SBTestCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBTestCell.m; sourceTree = "<group>"; };
+		331BAF6D1E2763D200B94BD4 /* SBTestCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SBTestCell.xib; sourceTree = "<group>"; };
+		331BAF6F1E2764A700B94BD4 /* SBTestModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBTestModel.h; sourceTree = "<group>"; };
+		331BAF701E2764A700B94BD4 /* SBTestModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBTestModel.m; sourceTree = "<group>"; };
+		331BAF751E27752C00B94BD4 /* SpeedMeterTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpeedMeterTestViewController.h; sourceTree = "<group>"; };
+		331BAF761E27752C00B94BD4 /* SpeedMeterTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpeedMeterTestViewController.m; sourceTree = "<group>"; };
+		331BAF771E27752C00B94BD4 /* SpeedMeterTestViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SpeedMeterTestViewController.xib; sourceTree = "<group>"; };
+		489EF40C0BD48826AF8FF468 /* libPods-SBAnimation.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SBAnimation.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F15F74F8BA8C3720CAB56898 /* Pods-SBAnimation.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SBAnimation.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SBAnimation/Pods-SBAnimation.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,17 +55,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				40E9ED01209799629DB57570 /* libPods-SBAnimation.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		12F63670EE59B607B17E9AC6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				489EF40C0BD48826AF8FF468 /* libPods-SBAnimation.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		331BAF411E275D3F00B94BD4 = {
 			isa = PBXGroup;
 			children = (
 				331BAF4C1E275D3F00B94BD4 /* SBAnimation */,
 				331BAF4B1E275D3F00B94BD4 /* Products */,
+				FEBE7A55C6AF4E91B0D64595 /* Pods */,
+				12F63670EE59B607B17E9AC6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -68,6 +96,11 @@
 				331BAF511E275D3F00B94BD4 /* AppDelegate.m */,
 				331BAF531E275D3F00B94BD4 /* ViewController.h */,
 				331BAF541E275D3F00B94BD4 /* ViewController.m */,
+				331BAF6A1E27624F00B94BD4 /* SBTestCell.h */,
+				331BAF6B1E27624F00B94BD4 /* SBTestCell.m */,
+				331BAF6D1E2763D200B94BD4 /* SBTestCell.xib */,
+				331BAF6F1E2764A700B94BD4 /* SBTestModel.h */,
+				331BAF701E2764A700B94BD4 /* SBTestModel.m */,
 				331BAF561E275D3F00B94BD4 /* Main.storyboard */,
 				331BAF591E275D3F00B94BD4 /* Assets.xcassets */,
 				331BAF5B1E275D3F00B94BD4 /* LaunchScreen.storyboard */,
@@ -91,8 +124,20 @@
 				331BAF651E275D7D00B94BD4 /* SpeedoMeterView.h */,
 				331BAF661E275D7D00B94BD4 /* SpeedoMeterView.m */,
 				331BAF671E275D7D00B94BD4 /* SpeedoMeterView.xib */,
+				331BAF751E27752C00B94BD4 /* SpeedMeterTestViewController.h */,
+				331BAF761E27752C00B94BD4 /* SpeedMeterTestViewController.m */,
+				331BAF771E27752C00B94BD4 /* SpeedMeterTestViewController.xib */,
 			);
 			path = SpeedMeterView;
+			sourceTree = "<group>";
+		};
+		FEBE7A55C6AF4E91B0D64595 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F15F74F8BA8C3720CAB56898 /* Pods-SBAnimation.debug.xcconfig */,
+				210585C6DCCB291009077F94 /* Pods-SBAnimation.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -102,9 +147,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 331BAF611E275D3F00B94BD4 /* Build configuration list for PBXNativeTarget "SBAnimation" */;
 			buildPhases = (
+				A1DB3691C568F9DCA32F751A /* [CP] Check Pods Manifest.lock */,
 				331BAF461E275D3F00B94BD4 /* Sources */,
 				331BAF471E275D3F00B94BD4 /* Frameworks */,
 				331BAF481E275D3F00B94BD4 /* Resources */,
+				8D106407EEC40553DE1C2FB2 /* [CP] Embed Pods Frameworks */,
+				3442E1274323CAEC10F6EA90 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -156,12 +204,62 @@
 			files = (
 				331BAF691E275D7D00B94BD4 /* SpeedoMeterView.xib in Resources */,
 				331BAF5D1E275D3F00B94BD4 /* LaunchScreen.storyboard in Resources */,
+				331BAF791E27752C00B94BD4 /* SpeedMeterTestViewController.xib in Resources */,
 				331BAF5A1E275D3F00B94BD4 /* Assets.xcassets in Resources */,
 				331BAF581E275D3F00B94BD4 /* Main.storyboard in Resources */,
+				331BAF6E1E2763D200B94BD4 /* SBTestCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3442E1274323CAEC10F6EA90 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SBAnimation/Pods-SBAnimation-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8D106407EEC40553DE1C2FB2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SBAnimation/Pods-SBAnimation-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A1DB3691C568F9DCA32F751A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		331BAF461E275D3F00B94BD4 /* Sources */ = {
@@ -171,7 +269,10 @@
 				331BAF681E275D7D00B94BD4 /* SpeedoMeterView.m in Sources */,
 				331BAF551E275D3F00B94BD4 /* ViewController.m in Sources */,
 				331BAF521E275D3F00B94BD4 /* AppDelegate.m in Sources */,
+				331BAF781E27752C00B94BD4 /* SpeedMeterTestViewController.m in Sources */,
 				331BAF4F1E275D3F00B94BD4 /* main.m in Sources */,
+				331BAF711E2764A700B94BD4 /* SBTestModel.m in Sources */,
+				331BAF6C1E27624F00B94BD4 /* SBTestCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,11 +388,17 @@
 		};
 		331BAF621E275D3F00B94BD4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F15F74F8BA8C3720CAB56898 /* Pods-SBAnimation.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 552B69TXM9;
+				ENABLE_BITCODE = YES;
 				INFOPLIST_FILE = SBAnimation/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = app.SBAnimation;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -299,11 +406,17 @@
 		};
 		331BAF631E275D3F00B94BD4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 210585C6DCCB291009077F94 /* Pods-SBAnimation.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 552B69TXM9;
+				ENABLE_BITCODE = YES;
 				INFOPLIST_FILE = SBAnimation/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = app.SBAnimation;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};

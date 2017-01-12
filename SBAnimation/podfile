@@ -1,0 +1,6 @@
+
+target 'SBAnimation' do
+
+pod 'YYWebImage'
+
+end
