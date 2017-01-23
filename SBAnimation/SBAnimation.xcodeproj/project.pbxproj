@@ -174,7 +174,7 @@
 				TargetAttributes = {
 					331BAF491E275D3F00B94BD4 = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = 552B69TXM9;
+						DevelopmentTeam = V2WXP6H9GS;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -391,9 +391,10 @@
 			baseConfigurationReference = F15F74F8BA8C3720CAB56898 /* Pods-SBAnimation.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 552B69TXM9;
+				DEVELOPMENT_TEAM = V2WXP6H9GS;
 				ENABLE_BITCODE = YES;
 				INFOPLIST_FILE = SBAnimation/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
@@ -409,9 +410,10 @@
 			baseConfigurationReference = 210585C6DCCB291009077F94 /* Pods-SBAnimation.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 552B69TXM9;
+				DEVELOPMENT_TEAM = V2WXP6H9GS;
 				ENABLE_BITCODE = YES;
 				INFOPLIST_FILE = SBAnimation/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",

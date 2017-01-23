@@ -25,6 +25,7 @@
     [super viewDidLoad];
     self.title = @"SBAnimation";
     _tableView.tableFooterView = [UIView new];
+    self.automaticallyAdjustsScrollViewInsets = NO;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
