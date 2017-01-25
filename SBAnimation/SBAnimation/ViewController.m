@@ -52,14 +52,18 @@
 - (NSArray *)dataSource {
     if (_dataSource == nil) {
         NSArray *animationNameArray = @[@"仪表盘",
-                                        @"购物车抛物线"];
+                                        @"购物车抛物线",
+                                        @"列表空数据展示"];
         NSArray *authorNameArray = @[@"猫咪瞎跳",
+                                     @"Programer Sunny",
                                      @"Programer Sunny"
                                      ];
         NSArray *animationGifUrlArray = @[@"http://ojno1pj4x.bkt.clouddn.com/91B9BB1D47A45C3FD69A20FB5813C31F.jpg",
+                                          @"shopcart_doggy",
                                           @"shopcart_doggy"];
         NSArray *testDemoControllerArray = @[@"SpeedMeterTestViewController",
-                                             @"ShopCartAnimationController"];
+                                             @"ShopCartAnimationController",
+                                             @""];
         
         NSMutableArray *dataSourceArray = [NSMutableArray array];
         for (NSInteger i = 0; i < animationNameArray.count ; i ++) {

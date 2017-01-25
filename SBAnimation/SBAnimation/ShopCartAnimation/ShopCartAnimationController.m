@@ -11,6 +11,7 @@
 #import "ShopCartAnimationController.h"
 #import "ShopCartAnimation.h"
 #import "PSProductCell.h"
+
 @interface ShopCartAnimationController () <ShopCartAnimationDelegate, UITableViewDelegate, UITableViewDataSource>
 
 @property (nonatomic ,strong) UIView *redView;
