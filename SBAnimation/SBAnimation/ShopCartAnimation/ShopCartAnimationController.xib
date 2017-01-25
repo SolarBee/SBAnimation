@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ShopCartAnimationController">
+            <connections>
+                <outlet property="shopCartBottonView" destination="VHo-eU-LfX" id="3Xx-fm-LVg"/>
+                <outlet property="shopcartButton" destination="uRc-Tq-uYn" id="uhp-be-D91"/>
+                <outlet property="tableView" destination="bOa-mA-cSs" id="LPW-Pv-RfM"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VHo-eU-LfX">
+                    <rect key="frame" x="0.0" y="616" width="375" height="51"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qTe-r1-t4W">
+                            <rect key="frame" x="275" y="0.0" width="100" height="51"/>
+                            <color key="backgroundColor" red="1" green="0.45098039220000002" blue="0.15686274510000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="100" id="CuO-pk-jex"/>
+                            </constraints>
+                            <inset key="titleEdgeInsets" minX="0.0" minY="0.0" maxX="10" maxY="0.0"/>
+                            <inset key="imageEdgeInsets" minX="80" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            <state key="normal" title="去结算" image="shopcart__icon_gopay">
+                                <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uRc-Tq-uYn">
+                            <rect key="frame" x="13" y="13" width="25" height="25"/>
+                            <state key="normal" image="shopcart_icon_bottom"/>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="总计" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NsY-29-1ci">
+                            <rect key="frame" x="53" y="18" width="27" height="16"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="¥280.90" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tfj-ue-peR">
+                            <rect key="frame" x="84" y="17" width="64" height="18"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="qTe-r1-t4W" secondAttribute="trailing" id="2vl-Ce-xix"/>
+                        <constraint firstItem="Tfj-ue-peR" firstAttribute="leading" secondItem="NsY-29-1ci" secondAttribute="trailing" constant="4" id="3sK-l4-IpU"/>
+                        <constraint firstItem="NsY-29-1ci" firstAttribute="leading" secondItem="uRc-Tq-uYn" secondAttribute="trailing" constant="15" id="9Oz-Nt-XkY"/>
+                        <constraint firstAttribute="height" constant="51" id="EG4-EH-x11"/>
+                        <constraint firstAttribute="bottom" secondItem="qTe-r1-t4W" secondAttribute="bottom" id="Hyx-oH-J0X"/>
+                        <constraint firstItem="uRc-Tq-uYn" firstAttribute="centerY" secondItem="VHo-eU-LfX" secondAttribute="centerY" id="LI3-vb-jqA"/>
+                        <constraint firstItem="qTe-r1-t4W" firstAttribute="top" secondItem="VHo-eU-LfX" secondAttribute="top" id="UDu-Rl-76f"/>
+                        <constraint firstItem="NsY-29-1ci" firstAttribute="centerY" secondItem="VHo-eU-LfX" secondAttribute="centerY" id="bxq-l6-goI"/>
+                        <constraint firstItem="Tfj-ue-peR" firstAttribute="centerY" secondItem="NsY-29-1ci" secondAttribute="centerY" id="o9s-lK-RY5"/>
+                        <constraint firstItem="uRc-Tq-uYn" firstAttribute="leading" secondItem="VHo-eU-LfX" secondAttribute="leading" constant="13" id="ryu-fC-ax7"/>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="51" id="xbO-jR-e5B"/>
+                    </constraints>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="bOa-mA-cSs">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="616"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <color key="separatorColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                    <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="qof-am-grF"/>
+                        <outlet property="delegate" destination="-1" id="BX8-rU-UOO"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="VHo-eU-LfX" secondAttribute="bottom" id="0eg-uQ-2Vc"/>
+                <constraint firstItem="VHo-eU-LfX" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="12D-hW-3Ih"/>
+                <constraint firstItem="bOa-mA-cSs" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Pdr-bn-e78"/>
+                <constraint firstAttribute="trailing" secondItem="bOa-mA-cSs" secondAttribute="trailing" id="WAa-4F-Pmm"/>
+                <constraint firstAttribute="trailing" secondItem="VHo-eU-LfX" secondAttribute="trailing" id="bmr-Ee-rMI"/>
+                <constraint firstItem="VHo-eU-LfX" firstAttribute="top" secondItem="bOa-mA-cSs" secondAttribute="bottom" id="pFT-P4-Y9j"/>
+                <constraint firstItem="bOa-mA-cSs" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="rhS-Pj-fAl"/>
+            </constraints>
+        </view>
+    </objects>
+    <resources>
+        <image name="shopcart__icon_gopay" width="7" height="8"/>
+        <image name="shopcart_icon_bottom" width="25" height="25"/>
+    </resources>
+</document>

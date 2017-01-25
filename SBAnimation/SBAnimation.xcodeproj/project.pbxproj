@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		33182C771E38F1C000D9622C /* ShopCartAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 33182C761E38F1C000D9622C /* ShopCartAnimation.m */; };
+		33182C7B1E38F34400D9622C /* ShopCartAnimationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 33182C791E38F34400D9622C /* ShopCartAnimationController.m */; };
+		33182C7C1E38F34400D9622C /* ShopCartAnimationController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 33182C7A1E38F34400D9622C /* ShopCartAnimationController.xib */; };
+		33182C801E38F60500D9622C /* PSProductCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 33182C7E1E38F60500D9622C /* PSProductCell.m */; };
+		33182C811E38F60500D9622C /* PSProductCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 33182C7F1E38F60500D9622C /* PSProductCell.xib */; };
 		331BAF4F1E275D3F00B94BD4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 331BAF4E1E275D3F00B94BD4 /* main.m */; };
 		331BAF521E275D3F00B94BD4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 331BAF511E275D3F00B94BD4 /* AppDelegate.m */; };
 		331BAF551E275D3F00B94BD4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 331BAF541E275D3F00B94BD4 /* ViewController.m */; };
@@ -25,6 +30,14 @@
 
 /* Begin PBXFileReference section */
 		210585C6DCCB291009077F94 /* Pods-SBAnimation.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SBAnimation.release.xcconfig"; path = "Pods/Target Support Files/Pods-SBAnimation/Pods-SBAnimation.release.xcconfig"; sourceTree = "<group>"; };
+		33182C751E38F1C000D9622C /* ShopCartAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShopCartAnimation.h; sourceTree = "<group>"; };
+		33182C761E38F1C000D9622C /* ShopCartAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShopCartAnimation.m; sourceTree = "<group>"; };
+		33182C781E38F34400D9622C /* ShopCartAnimationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShopCartAnimationController.h; sourceTree = "<group>"; };
+		33182C791E38F34400D9622C /* ShopCartAnimationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShopCartAnimationController.m; sourceTree = "<group>"; };
+		33182C7A1E38F34400D9622C /* ShopCartAnimationController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ShopCartAnimationController.xib; sourceTree = "<group>"; };
+		33182C7D1E38F60500D9622C /* PSProductCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSProductCell.h; sourceTree = "<group>"; };
+		33182C7E1E38F60500D9622C /* PSProductCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSProductCell.m; sourceTree = "<group>"; };
+		33182C7F1E38F60500D9622C /* PSProductCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PSProductCell.xib; sourceTree = "<group>"; };
 		331BAF4A1E275D3F00B94BD4 /* SBAnimation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SBAnimation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		331BAF4E1E275D3F00B94BD4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		331BAF501E275D3F00B94BD4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -70,6 +83,21 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		33182C741E38F18700D9622C /* ShopCartAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				33182C751E38F1C000D9622C /* ShopCartAnimation.h */,
+				33182C761E38F1C000D9622C /* ShopCartAnimation.m */,
+				33182C781E38F34400D9622C /* ShopCartAnimationController.h */,
+				33182C791E38F34400D9622C /* ShopCartAnimationController.m */,
+				33182C7A1E38F34400D9622C /* ShopCartAnimationController.xib */,
+				33182C7D1E38F60500D9622C /* PSProductCell.h */,
+				33182C7E1E38F60500D9622C /* PSProductCell.m */,
+				33182C7F1E38F60500D9622C /* PSProductCell.xib */,
+			);
+			path = ShopCartAnimation;
+			sourceTree = "<group>";
+		};
 		331BAF411E275D3F00B94BD4 = {
 			isa = PBXGroup;
 			children = (
@@ -91,6 +119,7 @@
 		331BAF4C1E275D3F00B94BD4 /* SBAnimation */ = {
 			isa = PBXGroup;
 			children = (
+				33182C741E38F18700D9622C /* ShopCartAnimation */,
 				331BAF641E275D7700B94BD4 /* SpeedMeterView */,
 				331BAF501E275D3F00B94BD4 /* AppDelegate.h */,
 				331BAF511E275D3F00B94BD4 /* AppDelegate.m */,
@@ -206,7 +235,9 @@
 				331BAF5D1E275D3F00B94BD4 /* LaunchScreen.storyboard in Resources */,
 				331BAF791E27752C00B94BD4 /* SpeedMeterTestViewController.xib in Resources */,
 				331BAF5A1E275D3F00B94BD4 /* Assets.xcassets in Resources */,
+				33182C7C1E38F34400D9622C /* ShopCartAnimationController.xib in Resources */,
 				331BAF581E275D3F00B94BD4 /* Main.storyboard in Resources */,
+				33182C811E38F60500D9622C /* PSProductCell.xib in Resources */,
 				331BAF6E1E2763D200B94BD4 /* SBTestCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -267,11 +298,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				331BAF681E275D7D00B94BD4 /* SpeedoMeterView.m in Sources */,
+				33182C7B1E38F34400D9622C /* ShopCartAnimationController.m in Sources */,
 				331BAF551E275D3F00B94BD4 /* ViewController.m in Sources */,
+				33182C771E38F1C000D9622C /* ShopCartAnimation.m in Sources */,
 				331BAF521E275D3F00B94BD4 /* AppDelegate.m in Sources */,
 				331BAF781E27752C00B94BD4 /* SpeedMeterTestViewController.m in Sources */,
 				331BAF4F1E275D3F00B94BD4 /* main.m in Sources */,
 				331BAF711E2764A700B94BD4 /* SBTestModel.m in Sources */,
+				33182C801E38F60500D9622C /* PSProductCell.m in Sources */,
 				331BAF6C1E27624F00B94BD4 /* SBTestCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

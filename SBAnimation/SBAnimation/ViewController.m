@@ -25,7 +25,12 @@
     [super viewDidLoad];
     self.title = @"SBAnimation";
     _tableView.tableFooterView = [UIView new];
-    self.automaticallyAdjustsScrollViewInsets = NO;
+    if ([self respondsToSelector:@selector(setEdgesForExtendedLayout:)]) {
+        self.edgesForExtendedLayout = UIRectEdgeNone;
+    }
+    self.navigationController.navigationBar.barTintColor = [UIColor whiteColor];
+    self.navigationController.navigationBar.tintColor = [UIColor blackColor];
+    [[UINavigationBar appearance] setTintColor:[UIColor whiteColor]];
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
@@ -46,10 +51,15 @@
 
 - (NSArray *)dataSource {
     if (_dataSource == nil) {
-        NSArray *animationNameArray = @[@"仪表盘"];
-        NSArray *authorNameArray = @[@"猫咪瞎跳"];
-        NSArray *animationGifUrlArray = @[@"http://ojno1pj4x.bkt.clouddn.com/91B9BB1D47A45C3FD69A20FB5813C31F.jpg"];
-        NSArray *testDemoControllerArray = @[@"SpeedMeterTestViewController"];
+        NSArray *animationNameArray = @[@"仪表盘",
+                                        @"购物车抛物线"];
+        NSArray *authorNameArray = @[@"猫咪瞎跳",
+                                     @"Programer Sunny"
+                                     ];
+        NSArray *animationGifUrlArray = @[@"http://ojno1pj4x.bkt.clouddn.com/91B9BB1D47A45C3FD69A20FB5813C31F.jpg",
+                                          @"shopcart_doggy"];
+        NSArray *testDemoControllerArray = @[@"SpeedMeterTestViewController",
+                                             @"ShopCartAnimationController"];
         
         NSMutableArray *dataSourceArray = [NSMutableArray array];
         for (NSInteger i = 0; i < animationNameArray.count ; i ++) {

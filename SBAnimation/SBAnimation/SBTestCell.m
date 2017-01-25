@@ -37,13 +37,17 @@
     _item = item;
     self.animationNameLabel.text = item.animationName;
     self.authorNameLabel.text = item.authorName;
-    [self.gifImageView yy_setImageWithURL:[NSURL URLWithString:item.animationGifUrl]
-                              placeholder:nil
-                                  options:YYWebImageOptionProgressiveBlur | YYWebImageOptionSetImageWithFadeAnimation
-                                  manager:nil
-                                 progress:nil
-                                transform:nil
-                               completion:nil];
+    if ([item.animationGifUrl containsString:@"."]) {
+        [self.gifImageView yy_setImageWithURL:[NSURL URLWithString:item.animationGifUrl]
+                                  placeholder:nil
+                                      options:YYWebImageOptionProgressiveBlur | YYWebImageOptionSetImageWithFadeAnimation
+                                      manager:nil
+                                     progress:nil
+                                    transform:nil
+                                   completion:nil];
+    } else {
+        self.gifImageView.image = [UIImage imageNamed:item.animationGifUrl];
+    }
 
 }
 @end
