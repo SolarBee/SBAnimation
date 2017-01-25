@@ -63,7 +63,7 @@
                                           @"shopcart_doggy"];
         NSArray *testDemoControllerArray = @[@"SpeedMeterTestViewController",
                                              @"ShopCartAnimationController",
-                                             @""];
+                                             @"EDKViewController"];
         
         NSMutableArray *dataSourceArray = [NSMutableArray array];
         for (NSInteger i = 0; i < animationNameArray.count ; i ++) {
