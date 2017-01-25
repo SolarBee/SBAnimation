@@ -1,9 +1,12 @@
 //
 //  EDKViewController.h
-//  SBAnimation
+//  EDKViewController   GitHub: https://github.com/SolarBee/SBAnimation
 //
-//  Created by 孙扬 on 2017/1/26.
-//  Copyright © 2017年 Programmer Sunny. All rights reserved.
+//  Created by ProgramerSunny on 16/9/6.
+//  Copyright © 2016年 ProgramerSunny. All rights reserved.
+//
+//  This source code is licensed under the MIT-style license found in the
+//  LICENSE file in the root directory of this source tree.
 //
 
 #import <UIKit/UIKit.h>
