@@ -21,7 +21,12 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.title = @"EmptyDataKit";
+    if ([self respondsToSelector:@selector(setEdgesForExtendedLayout:)]) {
+        self.edgesForExtendedLayout = UIRectEdgeNone;
+    }
+    
     self.tableView.rowHeight = 100;
+    self.tableView.tableFooterView = [UIView new];
     __weak typeof(self) weakSelf = self;
     EmptyDataKit *kit = [[EmptyDataKit alloc] initWithEdk_Image:[UIImage imageNamed:@"shopcart_doggy"] edk_Message:@"对不起没有数据" edk_reloadHandler:^{
         [weakSelf getData];
@@ -31,17 +36,17 @@
     kit.edk_error_message = @"哈哈哈，网络挂啦";
     self.tableView.emptyKit = kit;
     
-    
     UIBarButtonItem *errorItem = [[UIBarButtonItem alloc] initWithTitle:@"错误" style:UIBarButtonItemStyleDone target:self action:@selector(networkError)];
     
-    UIBarButtonItem *deleteItem = [[UIBarButtonItem alloc] initWithTitle:@"删除" style:UIBarButtonItemStyleDone target:self action:@selector(networkError)];
+    UIBarButtonItem *deleteItem = [[UIBarButtonItem alloc] initWithTitle:@"删除" style:UIBarButtonItemStyleDone target:self action:@selector(deleteData)];
     
-    UIBarButtonItem *addItem = [[UIBarButtonItem alloc] initWithTitle:@"加载" style:UIBarButtonItemStyleDone target:self action:@selector(networkError)];
+    UIBarButtonItem *addItem = [[UIBarButtonItem alloc] initWithTitle:@"加载" style:UIBarButtonItemStyleDone target:self action:@selector(getData)];
     
     self.navigationItem.leftBarButtonItems = @[addItem ,deleteItem];
     self.navigationItem.rightBarButtonItem = errorItem;
 }
 
+#pragma mark - Private method
 - (void)getData{
     for (NSInteger i = 0; i < 20; i ++) {
         [self.dataSource addObject:@1];
@@ -52,11 +57,13 @@
 - (void)networkError {
     [self.dataSource removeAllObjects];
     self.tableView.emptyKit.edk_type = EDK_Error;
+    [self.tableView reloadData];
 }
 
 - (void)deleteData {
     [self.dataSource removeAllObjects];
     self.tableView.emptyKit.edk_type = EDK_Empty;
+    [self.tableView reloadData];
 }
 
 
