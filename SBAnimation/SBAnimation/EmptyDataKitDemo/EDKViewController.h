@@ -1,6 +1,7 @@
 //
 //  EDKViewController.h
 //  EDKViewController   GitHub: https://github.com/SolarBee/SBAnimation
+//                      原地址:  https://github.com/ProgramerSunny/EmptyDataKit
 //
 //  Created by ProgramerSunny on 16/9/6.
 //  Copyright © 2016年 ProgramerSunny. All rights reserved.

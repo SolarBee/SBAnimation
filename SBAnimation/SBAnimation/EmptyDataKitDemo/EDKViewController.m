@@ -1,6 +1,7 @@
 //
 //  EDKViewController.m
 //  EDKViewController   GitHub: https://github.com/SolarBee/SBAnimation
+//                      原地址:  https://github.com/ProgramerSunny/EmptyDataKit
 //
 //  Created by ProgramerSunny on 16/9/6.
 //  Copyright © 2016年 ProgramerSunny. All rights reserved.
@@ -45,8 +46,7 @@
     
     UIBarButtonItem *addItem = [[UIBarButtonItem alloc] initWithTitle:@"加载" style:UIBarButtonItemStyleDone target:self action:@selector(getData)];
     
-    self.navigationItem.leftBarButtonItems = @[addItem ,deleteItem];
-    self.navigationItem.rightBarButtonItem = errorItem;
+    self.navigationItem.rightBarButtonItems = @[addItem ,deleteItem, errorItem];
 }
 
 #pragma mark - Private method

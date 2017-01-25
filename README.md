@@ -21,4 +21,4 @@ SolarBee创建的一个关于一些动画和自定义有趣的View的合集的�
 
 
 
-～～demo未完成～～
+<img src="http://ojno1pj4x.bkt.clouddn.com/EmptyDataKit.gif">
