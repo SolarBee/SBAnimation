@@ -27,6 +27,10 @@
 		331BAF711E2764A700B94BD4 /* SBTestModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 331BAF701E2764A700B94BD4 /* SBTestModel.m */; };
 		331BAF781E27752C00B94BD4 /* SpeedMeterTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 331BAF761E27752C00B94BD4 /* SpeedMeterTestViewController.m */; };
 		331BAF791E27752C00B94BD4 /* SpeedMeterTestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 331BAF771E27752C00B94BD4 /* SpeedMeterTestViewController.xib */; };
+		33D0FB951E3B8E7100EF0DE4 /* PSTransationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 33D0FB941E3B8E7100EF0DE4 /* PSTransationViewController.m */; };
+		33D0FB981E3B8F2800EF0DE4 /* SYTaoBaoAnimationFromViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 33D0FB971E3B8F2800EF0DE4 /* SYTaoBaoAnimationFromViewController.m */; };
+		33D0FB9B1E3B8F7500EF0DE4 /* SYTaoBaoAnimationToViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 33D0FB9A1E3B8F7500EF0DE4 /* SYTaoBaoAnimationToViewController.m */; };
+		33D0FB9D1E3B927200EF0DE4 /* SYTaoBaoAnimation.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 33D0FB9C1E3B927200EF0DE4 /* SYTaoBaoAnimation.jpg */; };
 		40E9ED01209799629DB57570 /* libPods-SBAnimation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 489EF40C0BD48826AF8FF468 /* libPods-SBAnimation.a */; };
 /* End PBXBuildFile section */
 
@@ -64,6 +68,13 @@
 		331BAF751E27752C00B94BD4 /* SpeedMeterTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpeedMeterTestViewController.h; sourceTree = "<group>"; };
 		331BAF761E27752C00B94BD4 /* SpeedMeterTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpeedMeterTestViewController.m; sourceTree = "<group>"; };
 		331BAF771E27752C00B94BD4 /* SpeedMeterTestViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SpeedMeterTestViewController.xib; sourceTree = "<group>"; };
+		33D0FB931E3B8E7100EF0DE4 /* PSTransationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSTransationViewController.h; sourceTree = "<group>"; };
+		33D0FB941E3B8E7100EF0DE4 /* PSTransationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSTransationViewController.m; sourceTree = "<group>"; };
+		33D0FB961E3B8F2800EF0DE4 /* SYTaoBaoAnimationFromViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SYTaoBaoAnimationFromViewController.h; path = PSTransitionViewController/SYTaoBaoAnimationFromViewController.h; sourceTree = "<group>"; };
+		33D0FB971E3B8F2800EF0DE4 /* SYTaoBaoAnimationFromViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SYTaoBaoAnimationFromViewController.m; path = PSTransitionViewController/SYTaoBaoAnimationFromViewController.m; sourceTree = "<group>"; };
+		33D0FB991E3B8F7500EF0DE4 /* SYTaoBaoAnimationToViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SYTaoBaoAnimationToViewController.h; sourceTree = "<group>"; };
+		33D0FB9A1E3B8F7500EF0DE4 /* SYTaoBaoAnimationToViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SYTaoBaoAnimationToViewController.m; sourceTree = "<group>"; };
+		33D0FB9C1E3B927200EF0DE4 /* SYTaoBaoAnimation.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = SYTaoBaoAnimation.jpg; sourceTree = "<group>"; };
 		489EF40C0BD48826AF8FF468 /* libPods-SBAnimation.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SBAnimation.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F15F74F8BA8C3720CAB56898 /* Pods-SBAnimation.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SBAnimation.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SBAnimation/Pods-SBAnimation.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -134,6 +145,7 @@
 		331BAF4C1E275D3F00B94BD4 /* SBAnimation */ = {
 			isa = PBXGroup;
 			children = (
+				33D0FB911E3B8E2600EF0DE4 /* 淘宝加入购物车转场动画 */,
 				33182C821E39048700D9622C /* EmptyDataKitDemo */,
 				33182C741E38F18700D9622C /* ShopCartAnimation */,
 				331BAF641E275D7700B94BD4 /* SpeedMeterView */,
@@ -174,6 +186,28 @@
 				331BAF771E27752C00B94BD4 /* SpeedMeterTestViewController.xib */,
 			);
 			path = SpeedMeterView;
+			sourceTree = "<group>";
+		};
+		33D0FB911E3B8E2600EF0DE4 /* 淘宝加入购物车转场动画 */ = {
+			isa = PBXGroup;
+			children = (
+				33D0FB9C1E3B927200EF0DE4 /* SYTaoBaoAnimation.jpg */,
+				33D0FB961E3B8F2800EF0DE4 /* SYTaoBaoAnimationFromViewController.h */,
+				33D0FB971E3B8F2800EF0DE4 /* SYTaoBaoAnimationFromViewController.m */,
+				33D0FB991E3B8F7500EF0DE4 /* SYTaoBaoAnimationToViewController.h */,
+				33D0FB9A1E3B8F7500EF0DE4 /* SYTaoBaoAnimationToViewController.m */,
+				33D0FB921E3B8E5F00EF0DE4 /* PSTransitionViewController */,
+			);
+			path = "淘宝加入购物车转场动画";
+			sourceTree = "<group>";
+		};
+		33D0FB921E3B8E5F00EF0DE4 /* PSTransitionViewController */ = {
+			isa = PBXGroup;
+			children = (
+				33D0FB931E3B8E7100EF0DE4 /* PSTransationViewController.h */,
+				33D0FB941E3B8E7100EF0DE4 /* PSTransationViewController.m */,
+			);
+			path = PSTransitionViewController;
 			sourceTree = "<group>";
 		};
 		FEBE7A55C6AF4E91B0D64595 /* Pods */ = {
@@ -248,6 +282,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				331BAF691E275D7D00B94BD4 /* SpeedoMeterView.xib in Resources */,
+				33D0FB9D1E3B927200EF0DE4 /* SYTaoBaoAnimation.jpg in Resources */,
 				331BAF5D1E275D3F00B94BD4 /* LaunchScreen.storyboard in Resources */,
 				331BAF791E27752C00B94BD4 /* SpeedMeterTestViewController.xib in Resources */,
 				33182C871E3904A400D9622C /* EDKViewController.xib in Resources */,
@@ -314,6 +349,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				33D0FB981E3B8F2800EF0DE4 /* SYTaoBaoAnimationFromViewController.m in Sources */,
 				331BAF681E275D7D00B94BD4 /* SpeedoMeterView.m in Sources */,
 				33182C7B1E38F34400D9622C /* ShopCartAnimationController.m in Sources */,
 				331BAF551E275D3F00B94BD4 /* ViewController.m in Sources */,
@@ -322,6 +358,8 @@
 				331BAF781E27752C00B94BD4 /* SpeedMeterTestViewController.m in Sources */,
 				331BAF4F1E275D3F00B94BD4 /* main.m in Sources */,
 				331BAF711E2764A700B94BD4 /* SBTestModel.m in Sources */,
+				33D0FB9B1E3B8F7500EF0DE4 /* SYTaoBaoAnimationToViewController.m in Sources */,
+				33D0FB951E3B8E7100EF0DE4 /* PSTransationViewController.m in Sources */,
 				33182C861E3904A400D9622C /* EDKViewController.m in Sources */,
 				33182C801E38F60500D9622C /* PSProductCell.m in Sources */,
 				331BAF6C1E27624F00B94BD4 /* SBTestCell.m in Sources */,

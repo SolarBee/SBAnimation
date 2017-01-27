@@ -3,4 +3,6 @@ target 'SBAnimation' do
 
 pod 'YYWebImage'
 pod 'EmptyDataKit'
+pod 'Masonry'
+
 end

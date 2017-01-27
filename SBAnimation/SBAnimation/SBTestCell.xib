@@ -25,7 +25,7 @@
                         <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Gsx-ln-rfb">
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Gsx-ln-rfb" customClass="YYAnimatedImageView">
                         <rect key="frame" x="296" y="10" width="69" height="69"/>
                         <constraints>
                             <constraint firstAttribute="width" secondItem="Gsx-ln-rfb" secondAttribute="height" multiplier="1:1" id="j9c-LB-l2l"/>

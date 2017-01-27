@@ -19,7 +19,7 @@
 
 @property (weak, nonatomic) IBOutlet UILabel *authorNameLabel;
 
-@property (weak, nonatomic) IBOutlet UIImageView *gifImageView;
+@property (weak, nonatomic) IBOutlet YYAnimatedImageView *gifImageView;
 @end
 
 @implementation SBTestCell

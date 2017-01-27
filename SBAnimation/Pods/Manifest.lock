@@ -16,6 +16,7 @@ PODS:
     - BlocksKit/DynamicDelegate
   - EmptyDataKit (0.1):
     - BlocksKit
+  - Masonry (1.0.2)
   - YYCache (1.0.4)
   - YYImage (1.0.4):
     - YYImage/Core (= 1.0.4)
@@ -26,15 +27,17 @@ PODS:
 
 DEPENDENCIES:
   - EmptyDataKit
+  - Masonry
   - YYWebImage
 
 SPEC CHECKSUMS:
   BlocksKit: 7f422b971407001178d181a43b99014ea2591fe6
   EmptyDataKit: 9b67963191582d7ba531f79ac66d0d9e6a33e416
+  Masonry: 7c429b56da9d4ee0bbb3ed77a5ea710d6a5df39e
   YYCache: 8105b6638f5e849296c71f331ff83891a4942952
   YYImage: 1e1b62a9997399593e4b9c4ecfbbabbf1d3f3b54
   YYWebImage: 5f7f36aee2ae293f016d418c7d6ba05c4863e928
 
-PODFILE CHECKSUM: 8afc237690ba50f999037ea0f67d81f7404b0009
+PODFILE CHECKSUM: 3706544d56c9a71f74859a6cb5388b4e9518a39a
 
 COCOAPODS: 1.2.0.beta.1
