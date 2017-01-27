@@ -11,7 +11,6 @@
 
 #import "AppDelegate.h"
 #import <AVOSCloud/AVOSCloud.h>
-#import "SBTestModel.h"
 
 @interface AppDelegate ()
 
@@ -24,20 +23,7 @@
 }
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
     [self leancloudIssue];
-  
-    
-
-    
-    
-    
-    
-    
-    [SBTestModel getDataFromLeanCloudWithCompletationBlock:^(NSArray *array, NSError *error) {
-        NSLog(@"%@===%@",array,error);
-    }];
-
     return YES;
 }
 

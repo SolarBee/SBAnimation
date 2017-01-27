@@ -16,7 +16,7 @@
 @interface ViewController ()<UITableViewDelegate , UITableViewDataSource>
 
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
-@property (nonatomic ,strong) NSArray <SBTestModel *> *dataSource;
+@property (nonatomic ,strong) NSMutableArray <SBTestModel *> *dataSource;
 @end
 
 @implementation ViewController
@@ -24,6 +24,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.title = @"SBAnimation";
+    self.dataSource = [NSMutableArray array];
+    [self getData];
     _tableView.tableFooterView = [UIView new];
     if ([self respondsToSelector:@selector(setEdgesForExtendedLayout:)]) {
         self.edgesForExtendedLayout = UIRectEdgeNone;
@@ -48,39 +50,22 @@
     UIViewController *vc = [[clz alloc] init];
     [self.navigationController pushViewController:vc animated:YES];
 }
-
-- (NSArray *)dataSource {
-    if (_dataSource == nil) {
-        NSArray *animationNameArray = @[@"仪表盘",
-                                        @"购物车抛物线",
-                                        @"列表空数据展示",
-                                        @"仿淘宝加入购物车转场动画"];
-        NSArray *authorNameArray = @[@"猫咪瞎跳",
-                                     @"Programer Sunny",
-                                     @"Programer Sunny",
-                                     @"Programer Sunny"];
-        NSArray *animationGifUrlArray = @[
-                                          @"http://ojno1pj4x.bkt.clouddn.com/91B9BB1D47A45C3FD69A20FB5813C31F.jpg",
-                                          @"http://ojno1pj4x.bkt.clouddn.com/%E8%B4%AD%E7%89%A9%E8%BD%A6%E6%8A%9B%E7%89%A9%E7%BA%BF.gif",
-                                          @"http://ojno1pj4x.bkt.clouddn.com/EmptyDataKit.gif",
-                                          @"http://ojno1pj4x.bkt.clouddn.com/ProgramerSunnyDemo.gif"];
-        NSArray *testDemoControllerArray = @[@"SpeedMeterTestViewController",
-                                             @"ShopCartAnimationController",
-                                             @"EDKViewController",
-                                             @"SYTaoBaoAnimationFromViewController"];
-
-        
-        NSMutableArray *dataSourceArray = [NSMutableArray array];
-        for (NSInteger i = 0; i < animationNameArray.count ; i ++) {
-            SBTestModel *model = [[SBTestModel alloc] init];
-            model.animationName = animationNameArray[i];
-            model.animationGifUrl = animationGifUrlArray[i];
-            model.authorName = authorNameArray[i];
-            model.textControllerName = testDemoControllerArray[i];
-            [dataSourceArray addObject:model];
+    
+- (void)getData {
+    __weak typeof(self) weakSelf = self;
+    [SBTestModel getDataFromLeanCloudWithCompletationBlock:^(NSArray *array, NSError *error) {
+        if(!error && array.count > 0){
+            for (NSInteger i = 0; i < array.count; i ++) {
+                SBTestModel *model = [[SBTestModel alloc] init];
+                model.authorName = [array[i] objectForKey:@"authorName"];
+                model.animationGifUrl = [array[i] objectForKey:@"animationGifUrl"];
+                model.animationName = [array[i] objectForKey:@"animationName"];
+                model.authorName = [array[i] objectForKey:@"authorName"];
+                [weakSelf.dataSource addObject:model];
+            }
+            [weakSelf.tableView reloadData];
         }
-        _dataSource = dataSourceArray;
-    }
-    return _dataSource;
+    }];
 }
+
 @end
