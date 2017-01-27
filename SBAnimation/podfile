@@ -4,5 +4,5 @@ target 'SBAnimation' do
 pod 'YYWebImage'
 pod 'EmptyDataKit'
 pod 'Masonry'
-
+pod 'AVOSCloud' 
 end

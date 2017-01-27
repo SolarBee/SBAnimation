@@ -68,6 +68,7 @@
                                              @"ShopCartAnimationController",
                                              @"EDKViewController",
                                              @"SYTaoBaoAnimationFromViewController"];
+
         
         NSMutableArray *dataSourceArray = [NSMutableArray array];
         for (NSInteger i = 0; i < animationNameArray.count ; i ++) {

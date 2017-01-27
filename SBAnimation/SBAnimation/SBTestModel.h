@@ -11,6 +11,8 @@
 
 #import <Foundation/Foundation.h>
 
+
+typedef void(^CompletationBlock)(NSArray *array ,NSError *error);
 @interface SBTestModel : NSObject
 
 // 动画名称
@@ -21,4 +23,7 @@
 @property (nonatomic ,copy) NSString *authorName;
 // demo演示controller
 @property (nonatomic ,copy) NSString *textControllerName;
+    
+    
++ (void)getDataFromLeanCloudWithCompletationBlock:(CompletationBlock)block;
 @end

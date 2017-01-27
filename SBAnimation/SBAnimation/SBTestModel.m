@@ -10,7 +10,22 @@
 //
 
 #import "SBTestModel.h"
+#import <AVOSCloud/AVOSCloud.h>
 
 @implementation SBTestModel
+
+ 
+    
++ (void)getDataFromLeanCloudWithCompletationBlock:(CompletationBlock)block {
+    AVQuery *query = [AVQuery queryWithClassName:@"SBAnimationModel"];
+    query.limit = 20;
+    
+//    [query whereKey:@"" equalTo:@""];
+    
+    [query findObjectsInBackgroundWithBlock:^(NSArray * _Nullable objects, NSError * _Nullable error) {
+        block(objects ,error);
+    }];
+}
+
 
 @end
