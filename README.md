@@ -22,3 +22,11 @@ SolarBee创建的一个关于一些动画和自定义有趣的View的合集的�
 这个工具支持 CocoaPods 可见源作者 github 仓库 [地址](https://github.com/ProgramerSunny/EmptyDataKit)
 
 <img src="http://ojno1pj4x.bkt.clouddn.com/EmptyDataKit.gif">
+
+
+
+## 4、仿照淘宝商品详情加入购物车转场动画
+
+
+
+<img src="http://ojno1pj4x.bkt.clouddn.com/ProgramerSunnyDemo.gif">

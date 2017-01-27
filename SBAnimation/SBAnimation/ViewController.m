@@ -59,9 +59,10 @@
                                      @"Programer Sunny",
                                      @"Programer Sunny",
                                      @"Programer Sunny"];
-        NSArray *animationGifUrlArray = @[@"http://ojno1pj4x.bkt.clouddn.com/91B9BB1D47A45C3FD69A20FB5813C31F.jpg",
-                                          @"shopcart_doggy",
-                                          @"shopcart_doggy",
+        NSArray *animationGifUrlArray = @[
+                                          @"http://ojno1pj4x.bkt.clouddn.com/91B9BB1D47A45C3FD69A20FB5813C31F.jpg",
+                                          @"http://ojno1pj4x.bkt.clouddn.com/%E8%B4%AD%E7%89%A9%E8%BD%A6%E6%8A%9B%E7%89%A9%E7%BA%BF.gif",
+                                          @"http://ojno1pj4x.bkt.clouddn.com/EmptyDataKit.gif",
                                           @"http://ojno1pj4x.bkt.clouddn.com/ProgramerSunnyDemo.gif"];
         NSArray *testDemoControllerArray = @[@"SpeedMeterTestViewController",
                                              @"ShopCartAnimationController",

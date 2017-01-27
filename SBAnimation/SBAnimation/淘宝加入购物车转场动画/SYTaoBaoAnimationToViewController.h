@@ -2,8 +2,11 @@
 //  SYTaoBaoToViewController.h
 //  SBAnimation
 //
-//  Created by 孙扬 on 2017/1/27.
+//  Created by Programmer Sunny on 2017/1/27.
 //  Copyright © 2017年 Programmer Sunny. All rights reserved.
+//
+//  This source code is licensed under the MIT-style license found in the
+//  LICENSE file in the root directory of this source tree.
 //
 
 #import "PSTransationViewController.h"
