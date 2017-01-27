@@ -27,6 +27,6 @@ SolarBee创建的一个关于一些动画和自定义有趣的View的合集的�
 
 ## 4、仿照淘宝商品详情加入购物车转场动画
 
-
+使用说明在作者 [github](https://github.com/ProgramerSunny/SYTaoBaoAnimation)
 
 <img src="http://ojno1pj4x.bkt.clouddn.com/ProgramerSunnyDemo.gif">
