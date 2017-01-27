@@ -11,10 +11,15 @@
 #import "PSTransationViewController.h"
 
 
+#ifndef SCREEN_WIDTH
 //屏幕宽度
 #define SCREEN_WIDTH [UIScreen mainScreen].bounds.size.width
+#endif
+
+#ifndef SCREEN_HEIGHT
 //屏幕高度
 #define SCREEN_HEIGHT [UIScreen mainScreen].bounds.size.height
+#endif
 
 @interface PSTransationViewController ()
 
