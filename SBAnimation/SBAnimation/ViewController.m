@@ -61,6 +61,7 @@
                 model.animationGifUrl = [array[i] objectForKey:@"animationGifUrl"];
                 model.animationName = [array[i] objectForKey:@"animationName"];
                 model.authorName = [array[i] objectForKey:@"authorName"];
+                model.textControllerName = [array[i] objectForKey:@"textControllerName"];
                 [weakSelf.dataSource addObject:model];
             }
             [weakSelf.tableView reloadData];
