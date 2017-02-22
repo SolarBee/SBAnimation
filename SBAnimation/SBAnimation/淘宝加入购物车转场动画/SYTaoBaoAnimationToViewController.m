@@ -97,7 +97,7 @@
     [self.Ps_ContentView addSubview:advLabel];
     advLabel.backgroundColor = [UIColor whiteColor];
     advLabel.textAlignment = NSTextAlignmentCenter;
-    advLabel.text = @"@author : Programer Sunny\n\n@github:\nhttps://github.com/ProgramerSunny/mydemos";
+    advLabel.text = @"@author : CepheusSun \n\n@github:\nhttps://github.com/CepheusSun/mydemos";
     advLabel.textColor = [UIColor blackColor];
     advLabel.font = [UIFont systemFontOfSize:20];
     [advLabel mas_makeConstraints:^(MASConstraintMaker *make) {
